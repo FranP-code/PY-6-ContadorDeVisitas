@@ -2,6 +2,8 @@
 
 require 'logic.php';
 
+$c = 665;
+
 ?>
 
 <!DOCTYPE html>
@@ -15,12 +17,10 @@ require 'logic.php';
     <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <div class="container">
     <div class="blue-circle">
         <div class="gray-rectangle">
             <h2 class="visits">VISITAS</h2>
-            <h2 class="amount"><?php $c ?></h2>
-    </div>
+            <h2 class="amount"><?php echo $c ?></h2>
 </div>
 </div>
 </body>
