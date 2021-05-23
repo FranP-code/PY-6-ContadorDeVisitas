@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #2C3338;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.178);
+    height: 90px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 35pt !important;
+    text-align: center;
+}
+
+form {
+    margin-top: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+
+/* */
+
+.input-visitas {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* Credits: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
+
+/* */
+
+.input-visitas {
+    width: 120px;
+    height: 100px;
+    padding: 0;
+    font-size: 35pt;
+    background-color: #5781b7;
+    border: none;
+    border: solid 2px #2f475a;
+    text-align: center;
+    margin: auto;
+}
+
+.input-visitas:active, .input-visitas:focus {
+    border: solid 2px #2f475a;
+    outline: none;
+}
+
+/* */
+
+.input-submit {
+    border: none;
+}
+
+.input-submit:focus {
+    border: none;
+    outline: none;
+}
+
+/* Credits: https://www.codegrepper.com/code-examples/css/how+to+remove+button+decoration 
+
+/* */
+
+.input-submit {
+    width: 170px;
+    height: 40px;
+    padding: 0;
+    font-size: 15pt;
+    background-color: #b75774;
+    border: solid 2px #5a2f3f;
+    box-sizing: content-box;
+    margin-top: 20px;
+    transition: ease-in-out 0.3s background-color;
+    -webkit-transition: ease-in-out 0.3s background-color;
+    -moz-transition: ease-in-out 0.3s background-color;
+    -ms-transition: ease-in-out 0.3s background-color;
+    -o-transition: ease-in-out 0.3s background-color;
+}
+
+.input-submit:active, .input-submit:focus {
+    border: solid 2px #5a2f3f;
+    outline: none;
+    box-sizing: content-box;
+}
+
+.input-submit:hover {
+    background-color: #b37084;
+    transition: ease-in-out 0.3s background-color;
+    -webkit-transition: ease-in-out 0.3s background-color;
+    -moz-transition: ease-in-out 0.3s background-color;
+    -ms-transition: ease-in-out 0.3s background-color;
+    -o-transition: ease-in-out 0.3s background-color;
+}
+
+
+

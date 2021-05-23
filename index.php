@@ -14,7 +14,7 @@ if (file_exists('./visits.txt')) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,8 +28,11 @@ if (file_exists('./visits.txt')) {
         <div class="gray-rectangle">
             <h2 class="visits">VISITAS</h2>
             <h2 class="amount"><?php echo $c ?></h2>
-</div>
-</div>
+        </div>
+    </div>
+    <a href="./definer.html"><button>
+        Definir la cantidad de visitas
+    </button></a>
 </body>
 </html>
 

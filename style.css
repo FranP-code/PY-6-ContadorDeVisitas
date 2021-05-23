@@ -63,3 +63,69 @@ h2 {
     padding-top: 20px;
     font-size: 25pt;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* */
+
+button {
+    border: none;
+}
+
+button:focus {
+    border: none;
+    outline: none;
+}
+
+/* Credits: https://www.codegrepper.com/code-examples/css/how+to+remove+button+decoration 
+
+/* */
+
+button:active {
+    overflow: none;
+}
+
+button {
+    background-color: #465158;
+    color: #2f3542;
+    box-shadow: 5px 5px 0px 0 #3c464d;
+    font-weight: bold;
+    width: 300px;
+    height: 75px;
+    position: fixed;
+    top: 20px;
+    left: 82%;
+    transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -webkit-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -moz-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -ms-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -o-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: #286cff;
+    box-shadow: 5px 5px 0px 0 #979797;
+    transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -webkit-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -moz-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -ms-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    -o-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+}
+
+button:active {
+    box-shadow: 0px 0px 0px 0 #979797;
+    transition: none;
+    transform: translate(5px, 5px);
+    -webkit-transform: translate(5px, 5px);
+    -moz-transform: translate(5px, 5px);
+    -ms-transform: translate(5px, 5px);
+    -o-transform: translate(5px, 5px);
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
