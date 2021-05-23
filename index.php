@@ -2,7 +2,14 @@
 
 require 'logic.php';
 
-$c = 665;
+if (file_exists('./visits.txt')) {
+    $c = file_get_contents('./visits.txt');
+    $c++;
+
+} else {
+    $c = 'Error, el archivo visits.txt no existe';
+}
+
 
 ?>
 
@@ -25,3 +32,10 @@ $c = 665;
 </div>
 </body>
 </html>
+
+<?php
+
+if (file_exists('./visits.txt')) {
+    file_put_contents('./visits.txt', $c);
+}
+?>
