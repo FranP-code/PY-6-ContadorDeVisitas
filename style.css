@@ -57,6 +57,7 @@ h2 {
 
 .visits {
     padding-top: 40px;
+    font-size: 18pt;
 }
 
 .amount {
@@ -69,6 +70,45 @@ h2 {
     font-size: 35pt;
     color: #ff5555;
 }
+
+
+@media (min-width: 0) and (max-width: 1758px) {
+    .blue-circle {
+        /* */
+        position: relative;
+        top: 50%;
+        left: 50%;
+        margin: -125px 0 0 -125px; /* Half of the width*/
+        /* Credits: https://www.freecodecamp.org/news/how-to-center-anything-with-css-align-a-div-text-and-more/
+        /* */
+
+        width: 250px;
+        height: 250px;
+    }
+
+    .gray-rectangle {
+        width: 40%;
+        height: 40%;
+        background-color: #C4C4C4;
+    }
+
+    .visits {
+        padding-top: 20px;
+        font-size: 9pt;
+    }
+
+    .amount {
+        padding-top: 10px;
+        font-size: 12pt;
+    }
+    
+    .alert {
+        padding-top: 10px;
+        font-size: 17pt;
+        color: #ff5555;
+    }
+}
+
 
 a {
     text-decoration: none;
@@ -134,4 +174,46 @@ button:active {
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
+}
+
+@media (min-width: 0) and (max-width: 1758px) {
+    a {
+        display: flex;
+        position: relative;
+        top: -13%;
+        justify-content: center;
+    }
+
+    button {
+        position: initial;
+        top: 0;
+        left: 0;
+        margin: 0;
+        box-shadow: none;
+        background-color: white;
+        color: #286cff;
+    }
+    button:hover {
+        background-color: none;
+        color: none;
+        box-shadow: none;
+        transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+        -webkit-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+        -moz-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+        -ms-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+        -o-transition: color ease-in-out 0.4s, background-color ease-in-out 0.4s, box-shadow ease-in-out 0.4s;
+    }
+    
+    button:active {
+        transition: none;
+        transform: translate(0px, 5px);
+        -webkit-transform: translate(0px, 5px);
+        -moz-transform: translate(0px, 5px);
+        -ms-transform: translate(0px, 5px);
+        -o-transform: translate(0px, 5px);
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+}
 }
