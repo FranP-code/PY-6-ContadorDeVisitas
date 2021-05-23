@@ -1,17 +1,4 @@
-<?php
-
-require 'logic.php';
-
-if (file_exists('./visits.txt')) {
-    $c = file_get_contents('./visits.txt');
-    $c++;
-
-} else {
-    $c = 'Error, el archivo visits.txt no existe';
-}
-
-
-?>
+<?php require 'logic.php'; ?>
 
 <!DOCTYPE html>
 <html lang="es">
@@ -27,7 +14,16 @@ if (file_exists('./visits.txt')) {
     <div class="blue-circle">
         <div class="gray-rectangle">
             <h2 class="visits">VISITAS</h2>
-            <h2 class="amount"><?php echo $c ?></h2>
+            <?php 
+
+                if(!$tooBig) {
+                    echo $allRight;
+                } else {
+                    echo $alert;
+                    $c = 0;
+                }
+
+            ?>
         </div>
     </div>
     <a href="./definer.html"><button>
@@ -36,9 +32,4 @@ if (file_exists('./visits.txt')) {
 </body>
 </html>
 
-<?php
-
-if (file_exists('./visits.txt')) {
-    file_put_contents('./visits.txt', $c);
-}
-?>
+<?php actualizeNumber($c); ?>
